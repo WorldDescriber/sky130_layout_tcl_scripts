@@ -1,0 +1,7 @@
+vdd  1.8V
+pmos 2.0um/0.15um
+  pmos channel width is 2.0um
+  pmos channel length is 0.15um
+nmos 1.0um/0.15um
+  nmos channel width is 1.0um
+  nmos channel length is 0.15um

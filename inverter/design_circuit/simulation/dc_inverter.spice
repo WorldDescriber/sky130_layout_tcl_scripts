@@ -1,0 +1,39 @@
+** sch_path: /home/heweiwei/ask-projects/chip_project/logic_gates/not_gate/use_sky130/cmos_inverter_9/design_circuit/dc_inverter.sch
+**.subckt dc_inverter
+VIN A GND 0
+x1 VDD A Y GND inverter
+Cload Y GND 10f m=1
+VDD VDD GND 1.8
+**** begin user architecture code
+
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.control
+run
+dc VIN 0 1.8 0.01
+*plot V(Y) vs V(A) title VTC
+plot V(Y) V(A) title VTC
+*Voltage Transfer Characteristic
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /home/heweiwei/ask-projects/chip_project/logic_gates/not_gate/use_sky130/cmos_inverter_9/design_circuit/inverter.sym
+** sch_path: /home/heweiwei/ask-projects/chip_project/logic_gates/not_gate/use_sky130/cmos_inverter_9/design_circuit/inverter.sch
+.subckt inverter VDD A Y VSS
+*.ipin A
+*.opin Y
+*.ipin VDD
+*.opin VSS
+XM1 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.end
