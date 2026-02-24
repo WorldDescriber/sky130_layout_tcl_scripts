@@ -1,0 +1,52 @@
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+x1.y.t1                            4.58469e-07
+x1.net1                                    1.8
+x1.vdd.t3                                  1.8
+x1.vdd.t2                                  1.8
+x1.a.t0                                      0
+x1.vss.t1                          2.99886e-10
+x1.vss.t0                          1.26506e-08
+x1.y.t0                            3.51269e-07
+x1.vss.t3                          6.99943e-08
+x1.vss.t2                          1.26506e-08
+x1.a.t1                                      0
+x1.vdd.t1                                  1.8
+x1.vdd.t0                                  1.8
+x1.vdd.n0                                  1.8
+x1.vdd.n1                                  1.8
+vdd                                        1.8
+x1.y.n0                            3.92842e-07
+x1.y.n1                            3.62105e-07
+x1.y.n2                             3.9108e-07
+y                                  3.91384e-07
+x1.a.n0                                      0
+x1.a.n1                                      0
+a                                            0
+x1.vss.n1                          1.13233e-08
+x1.vss.n0                          2.15144e-08
+x1.vss.n2                          2.89911e-10
+va#branch                                    0
+vdd#branch                        -3.24601e-10
+
+ Reference value :  0.00000e+00
+No. of Data Rows : 2032
+trise28             =  5.605257e-11 targ=  1.129224e-09 trig=  1.073171e-09
+tfall82             =  4.903261e-11 targ=  6.137969e-09 trig=  6.088937e-09
+avg_power           =  -6.662325e-06 from=  1.000000e-09 to=  2.000000e-08
+peak_power          =  3.728786e-04 at=  1.003000e-09
+trise19             =  8.573231e-11 targ=  1.149823e-09 trig=  1.064091e-09
+tfall91             =  7.131370e-11 targ=  6.150886e-09 trig=  6.079572e-09
+tpdr                =  5.107851e-09 targ=  6.112851e-09 trig=  1.005000e-09
+tpdf                =  -4.917658e-09 targ=  1.097342e-09 trig=  6.015000e-09
+energy              =  -1.26383e-13 from=  1.00000e-09 to=  2.00000e-08
+i_peak              =  2.071548e-04 at=  1.003000e-09
+i_avg               =  -3.701292e-06 from=  1.000000e-09 to=  2.000000e-08
+voh                 =  1.800000e+00 at=  2.342000e-09
+vol                 =  9.903832e-07 at=  7.002000e-09
+overshoot           =  1.800001e+00 at=  1.522000e-09
+undershoot          =  -2.190392e-06 at=  6.372000e-09
+

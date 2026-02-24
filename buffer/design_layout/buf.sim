@@ -1,0 +1,10 @@
+| units: 500000 tech: sky130A format: MIT
+x NET1 VDD Y VDD s=33600,968 d=33600,968 l=30 w=400 x=608 y=0 sky130_fd_pr__pfet_01v8
+x A VSS NET1 VSS s=7056,336 d=7056,336 l=30 w=84 x=84 y=-301 sky130_fd_pr__nfet_01v8
+x NET1 VSS Y VSS s=14112,504 d=14112,504 l=30 w=168 x=608 y=-301 sky130_fd_pr__nfet_01v8
+x A VDD NET1 VDD s=16800,568 d=16800,568 l=30 w=200 x=84 y=0 sky130_fd_pr__pfet_01v8
+R Y 1305
+R A 871
+R VDD 9416
+R VSS 2524
+R NET1 2320

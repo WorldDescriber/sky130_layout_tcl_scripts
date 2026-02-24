@@ -1,0 +1,12 @@
+digital level
+input output
+0     0
+1     1
+
+voltage level
+input output
+0V    0V
+1V    1V
+
+buffer's main function is not pass same signal
+it provide power and good signal for next device input

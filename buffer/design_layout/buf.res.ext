@@ -1,0 +1,63 @@
+scale 1000 1 500000
+rnode "VSS.t3" 0 0 608 -218 0
+rnode "VSS.n0" 0 0 561 -360 0
+rnode "VSS.t1" 0 0 84 -260 0
+rnode "VSS.t2" 0 0 623 -218 0
+rnode "VSS.t0" 0 0 99 -260 0
+rnode "VSS.n1" 0 0 589 -393 0
+rnode "VSS.n2" 0 0 133 -393 0
+rnode "VSS" 0 0 178 -413 0
+rnode "VSS" 0 0 198 -373 0
+resist "VSS" "VSS" 3.87879
+resist "VSS" "VSS.n2" 15.2568
+resist "VSS" "VSS.n0" 70.4
+resist "VSS.n0" "VSS.t3" 150.201
+resist "VSS.t0" "VSS.t2" 232.746
+resist "VSS.n2" "VSS.t1" 283.497
+resist "VSS.n2" "VSS.n1" 581.737
+resist "VSS.n1" "VSS.n0" 593.697
+resist "VSS.n1" "VSS.t0" 737.028
+rnode "A" 0 0 27 -158 0
+rnode "A.t1" 0 0 99 100 0
+rnode "A.t0" 0 0 99 -260 0
+rnode "A.n0" 0 0 47 -138 0
+rnode "A.n1" 0 0 47 -138 0
+rnode "A" 0 0 47 -118 0
+resist "A.n1" "A" 3.87879
+resist "A" "A.n1" 3.87879
+resist "A.n1" "A.n0" 152
+resist "A.n0" "A.t0" 153.715
+resist "A.n0" "A.t1" 340.088
+rnode "Y.t1" 0 0 638 200 0
+rnode "Y.n0" 0 0 685 -184 0
+rnode "Y" 0 0 665 -272 0
+rnode "Y.t0" 0 0 638 -218 0
+rnode "Y.n1" 0 0 685 -184 0
+rnode "Y.n2" 0 0 685 -252 0
+rnode "Y" 0 0 685 -232 0
+resist "Y.n2" "Y" 3.87879
+resist "Y" "Y.n2" 3.87879
+resist "Y" "Y.n0" 9.30909
+resist "Y.n1" "Y.t0" 33.5714
+resist "Y.n2" "Y.n1" 185
+resist "Y.n1" "Y.n0" 185
+resist "Y.n0" "Y.t1" 203.329
+rnode "VDD.t2" 0 0 623 200 0
+rnode "VDD.t3" 0 0 608 200 0
+rnode "VDD.n0" 0 0 561 200 0
+rnode "VDD.t1" 0 0 84 100 0
+rnode "VDD.t0" 0 0 99 100 0
+rnode "VDD.n1" 0 0 65 291 0
+rnode "VDD" 0 0 178 271 0
+rnode "VDD" 0 0 198 311 0
+resist "VDD" "VDD" 3.87879
+resist "VDD" "VDD.n1" 15.136
+resist "VDD" "VDD.n0" 70.8901
+resist "VDD.n0" "VDD.t3" 146.154
+resist "VDD.n1" "VDD.t1" 377.944
+resist "VDD.n1" "VDD.t0" 853.834
+resist "VDD.n0" "VDD.t2" 1243.02
+device msubckt sky130_fd_pr__pfet_01v8 84 0 85 1  "VDD.t0" "A.t1" 60 0 "VDD.t1" 200 16800,568 "NET1" 200 16800,568
+device msubckt sky130_fd_pr__nfet_01v8 608 -302 609 -301  "VSS.t2" "NET1" 60 0 "VSS.t3" 168 14112,504 "Y.t0" 168 14112,504
+device msubckt sky130_fd_pr__nfet_01v8 84 -302 85 -301  "VSS.t0" "A.t0" 60 0 "VSS.t1" 84 7056,336 "NET1" 84 7056,336
+device msubckt sky130_fd_pr__pfet_01v8 608 0 609 1  "VDD.t2" "NET1" 60 0 "VDD.t3" 400 33600,968 "Y.t1" 400 33600,968

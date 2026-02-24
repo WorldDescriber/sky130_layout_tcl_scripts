@@ -1,0 +1,32 @@
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+y                                  2.81275e-07
+x1.net1                                    1.8
+vdd                                        1.8
+a                                            0
+va#branch                                    0
+vdd#branch                        -3.24602e-10
+
+ Reference value :  0.00000e+00
+No. of Data Rows : 2032
+trise28             =  4.624787e-11 targ=  1.105877e-09 trig=  1.059629e-09
+tfall82             =  4.040371e-11 targ=  6.113752e-09 trig=  6.073348e-09
+avg_power           =  -6.192185e-06 from=  1.000000e-09 to=  2.000000e-08
+peak_power          =  3.591491e-04 at=  1.003000e-09
+trise19             =  6.945543e-11 targ=  1.121900e-09 trig=  1.052444e-09
+tfall91             =  5.830121e-11 targ=  6.123841e-09 trig=  6.065539e-09
+tpdr                =  5.088086e-09 targ=  6.093086e-09 trig=  1.005000e-09
+tpdf                =  -4.935324e-09 targ=  1.079676e-09 trig=  6.015000e-09
+energy              =  -1.17585e-13 from=  1.00000e-09 to=  2.00000e-08
+i_peak              =  1.995273e-04 at=  1.003000e-09
+i_avg               =  -3.440103e-06 from=  1.000000e-09 to=  2.000000e-08
+voh                 =  1.799999e+00 at=  2.002000e-09
+vol                 =  8.071319e-07 at=  7.002000e-09
+overshoot           =  1.800002e+00 at=  1.412000e-09
+undershoot          =  -2.192877e-06 at=  6.292000e-09
+ngspice 553 -> quit
+ngspice-44.2 done
+
