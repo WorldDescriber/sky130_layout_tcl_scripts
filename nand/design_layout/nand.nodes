@@ -1,0 +1,6 @@
+Y 128 -84 li
+B 343 -88 li
+A -108 -102 li
+VDD 0 258 li
+VSS 0 -427 li
+net1 114 -303 ndif

@@ -50,8 +50,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Deepseek
 
 ## Completed
-- inverter
+- inverter, buffer, nand
 
 ## 📊 TODO
 
-- [ ] buffer,nand,nor,or,and,xor,xnor
+- [ ] nor,or,and,xor,xnor
